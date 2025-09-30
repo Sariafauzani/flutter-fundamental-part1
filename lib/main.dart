@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'basic_widgets/text_widget.dart';
-import 'basic_widgets/image_widget.dart';
+// import 'basic_widgets/image_widget.dart';
+import 'basic_widgets/loading_cupertino.dart';
 
 void main() {
   runApp(const MyApp());
@@ -108,8 +109,9 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             // const MyTextWidget(),
             const SizedBox(height: 20),
-            const MyImageWidget(), // tampilkan gambar
+            // const MyImageWidget(), // tampilkan gambar
             const SizedBox(height: 20),
+            const LoadingCupertino(),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
